@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 
-import UserContext from "../context/user-context";
+import UserContext from "../context/UserContext";
 
 // usecontext helps us to fetch data from UserContext.
 
-export default function Login() {
+function Login() {
    const [username, setUsername] = useState("");
    const [password, setPassword] = useState("");
 
@@ -40,3 +40,5 @@ export default function Login() {
       </div>
    );
 }
+
+export default Login;
