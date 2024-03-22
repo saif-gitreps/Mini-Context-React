@@ -1,6 +1,8 @@
 import useTheme from "../context/theme";
 
 export default function ThemeBtn() {
+   // step : 4 we are using the custom hook to consume the context
+   // we are getting the themeMode, lightTheme and darkTheme from the context , like a global variable.
    const { themeMode, lightTheme, darkTheme } = useTheme();
    const onChangeBtn = (e) => {
       const darkModeStatus = e.currentTarget.checked;
